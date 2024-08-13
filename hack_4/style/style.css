@@ -1,0 +1,127 @@
+:root {
+ --SALE:#B88940;
+ --Your_Fashion: #B88940;
+ --Franjas: #FFBD59;
+}
+
+@font-face {
+    font-family: Ruda1;
+    src: url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Catamaran:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruda:wght@400..900&display=swap');
+}
+@font-face {
+    font-family: Catamaran1;
+    src: url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Catamaran:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruda:wght@400..900&display=swap');
+}
+@font-face {
+    font-family: Open_sans1;
+    src: url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Catamaran:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruda:wght@400..900&display=swap');
+}
+
+/* body{
+    min-height: 100%;
+} */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.header-container div:nth-child(1) {
+    background-color: black;
+    width: 70px;
+    height: 5px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    margin-top: 2.5%;
+}
+
+.header-container H3 {
+    font-family: Ruda1;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.header-container h1 {
+    margin: 0 0;
+    color: var(--SALE);
+    font-size: 150px;
+    font-family: Ruda1;
+}
+
+.header-container h2 {
+    margin-top: 0;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: Ruda1;
+}
+
+.header-container h4{
+    font-family: Catamaran1;
+    font-size: 35px;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px 10px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: -1 ;
+    gap: 40px;
+    justify-content: center ;
+    top: -40px;
+
+}
+
+.box1 div {
+    background-color: var(--Franjas);
+    height: 40px;
+    width: 100%;
+}
+
+
+.carta{
+    width: 300px;
+    z-index: 1;
+    font-family: Catamaran1;
+    font-size: 30px;
+}
+.carta p{
+    padding-left: 25%;
+}
+
+img {
+    width: 300px;
+}
+
+footer h2 {
+    font-family: Open_sans1;
+    color: var(--Your_Fashion);
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+footer h3 {
+    font-family: Catamaran1;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
