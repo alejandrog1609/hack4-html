@@ -1,0 +1,249 @@
+:root { 
+    font-size: 20px;
+    --GREEN_CIRCULE: #7ED957;
+    --GREEN_STRIPE: #00BF63;
+    --GREEN_FOOTER: #00BF63;
+    --TEXT_FOOTER: #EEEEEE;
+
+}
+@font-face {
+    font-family: Arimo;
+    src: url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap'); */
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arimo;
+    height: 100%;
+}
+.container, main {
+    height: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 2em;
+}
+
+.circule {
+    display: flex;
+    background-color: var(--GREEN_CIRCULE);
+    width: 60px;
+    height: 60px; 
+    border-radius: 100%;
+}
+
+.section-background {
+    position: relative;
+    background: url(/hack4-html/hack_5/img/2.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.section-position {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.section-div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    
+}
+
+.section-text, .section-text1 {
+    color: var(--TEXT_FOOTER);
+    background-color: var(--GREEN_STRIPE);
+    padding-left: 120px;
+    text-wrap: nowrap;
+    width: 100%;
+    font-size: 3em;
+    margin: 5px 0px;
+}
+.section-text:nth-child(1) {
+    width: fit-content;
+    padding-right: 50px;
+    transform: translateX(-20px);
+    padding-left: 140px;
+}
+
+.section-text1 {
+    background-color: black;
+    padding-left: 125px;
+    text-wrap: nowrap;
+    margin: 5px 0px;
+    font-size: 1.5em;
+    /* width: fit-content; */
+    padding-right: 225px;
+}
+ .section-div:nth-child(1) {
+    margin-bottom: 10%;
+    width: fit-content;
+ }
+
+ .section-text1:nth-child(2) {
+    margin-left: 2%;
+    padding-left: 105px;
+    width: fit-content;
+ }
+
+ .section-margin {
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+
+ #section-margin-h2{
+    font-size: 3em;
+    margin-bottom: 0%;
+ }
+ .section-margin h3 {
+    font-size: 1.3em;
+ }
+
+ .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+ }
+
+ .carta {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+
+ .div-img1 {
+    aspect-ratio: 1/1; 
+    width: 300px;
+    margin-top: 0%;
+ }
+
+ .div-img2 {
+    aspect-ratio: 1/1;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+ }
+
+ #carta-img1-header {
+    margin-left: 5%;
+ }
+
+.carta-img-text {
+    margin-top: 0%;
+}
+
+ .container2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--GREEN_STRIPE);
+    text-wrap: nowrap;
+    width: 95%;
+    color: var(--TEXT_FOOTER);
+    margin: 1% 2.5%;
+ }
+
+ 
+
+
+/* Para tablets */
+@media only screen and (min-width: 600px) {}
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+    .section-text { 
+        font-size: 2em;
+    }
+    .section-text1 {
+        font-size: 1em;
+    }
+    
+    .section-text1:nth-child(1) {
+        padding-right: 120px;
+    }
+    
+    .container2 {
+        font-size: 0.8em;
+    }
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+}
+
+/* Para escritorio  */
+@media only screen and (max-width: 768px) {
+    .section-text { 
+        font-size: 1.6em;
+    }
+    .section-text1 {
+        font-size: 0.8em;
+    }
+    .container2 {
+        font-size: 0.6em;
+    }
+}
+/* Para tablets */
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 0.8em;
+    }
+
+    .section-text { 
+        padding-right: 0px;
+        padding-left: 0;
+        width: fit-content;
+        font-size: 1.5em;
+    }
+    .section-text:nth-child(1) {
+        padding-right: 0px;
+        padding-left: 0;
+        width: fit-content;
+    }
+    .section-text1:nth-child(2) {
+        padding-right: 0px;
+        padding-left: 0;
+        width: fit-content;
+        font-size: 1em;
+    }
+    .section-text1:nth-child(1) {
+        padding-right: 0px;
+        padding-left: 0;
+        width: fit-content;
+        font-size: 1em;
+    }
+    .container2 {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (min-width: 1200px) {}

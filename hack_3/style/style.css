@@ -1,0 +1,52 @@
+:root {
+    --Blue: #93B5C9;
+    --Wine: #AB2849;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Hack flex  */
+
+header div:nth-child(1) {
+    background-color: var(--Blue);
+    height: 100px;
+}
+header div:nth-child(2) {
+    background-color: var(--Wine);
+    height: 200px;
+}
+
+.main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 10%;
+    gap: 30px 10px;
+    height: 600px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.box {
+    flex:1;
+    background-color: var(--Wine);
+    /* height: 100px; */
+    flex-basis: 100%;
+
+}
+
+.box:nth-child(2), .box:nth-child(3), .box:nth-child(5), .box:nth-child(6) {
+    flex-basis:  48%;
+}
+
+.box1 {
+    background-color: var(--Wine);
+    align-items: center;
+    height: 100px;
+}

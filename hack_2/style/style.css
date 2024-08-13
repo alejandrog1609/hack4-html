@@ -1,0 +1,41 @@
+:root {
+    --Blue: #93B5C9;
+    --Wine: #AB2849;
+}
+
+html, body {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+/* Hack float  */
+
+.box1 {
+    background-color: var(--Blue);
+    width: 100%;
+    height: 100px;
+}
+
+.box2{
+    background-color: var(--Wine);
+    width: 100%;
+    height: 200px;
+}
+
+.box3 {
+    float: left;
+    background-color: var(--Wine);
+    width: 80%;
+    margin-top: 2%;
+    height: 100px;
+}
+
+.box4 {
+    float: center;
+    background-color: var(--Wine);
+    width: 95%;
+    height: 100px;
+    margin: 2% 2.5%;
+    margin-top: 550px;
+}
