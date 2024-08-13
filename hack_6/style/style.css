@@ -1,0 +1,145 @@
+:root {
+    --GREEN_CIRCULE: #00BF63;
+    --GREEN_BOTTON: #00BF63;
+    font-size:  20px;
+   }
+   
+   @font-face {
+       font-family: Inter1;
+       src: url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+   }
+   
+   *{
+       box-sizing: border-box;
+   }
+   
+   html, body {
+       font-family: Inter1;
+       margin: 0;
+       padding: 0;
+       height: 100%;
+   }
+   
+   .header-background {
+       position: relative;
+       background: url(/hack4-html/hack_6/img/2.png);
+       background-size: cover;
+       height: 100%;
+       width: 100%;
+   }
+   
+   .header-padding {
+       display: flex;
+       justify-content: space-between;
+       padding: 0 10%;
+       align-items: center;
+   }
+   
+   .header-box {
+       background-color: black;
+       color: #EEE;
+       padding: 10px 40px;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+       border-bottom-right-radius: 20px;
+       border-bottom-left-radius: 20px;
+       width: max-content;
+       font-size: 0.5em;
+   }
+   
+   .header-text {
+       font-size: 2em;
+   }
+   
+   .Circule-Ofert {
+       display: flex;
+       flex-wrap: wrap;
+       background-color: var(--GREEN_CIRCULE);
+       width: 250px;
+       height: 250px; 
+       border-radius: 100%;
+       color: #EEE;
+       text-align: center;
+       align-items: center;
+       font-size: 2em;
+       justify-content: center;
+       
+   }
+   .Circule-Ofert:hover{
+    scale: 1.1;
+    transition: 0.3s;
+   }
+
+   
+   .container1 {
+       display: flex;
+       padding: 0 10%;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       align-items: center;
+       
+   }
+   
+   .container-img {
+       width: 300px;
+       height: 400px;
+       margin-top: 25%;
+   }
+   .container-img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+   }
+   
+   .container1 strong del{
+       font-weight: normal;
+       text-decoration: line-through red;
+       align-items: center;
+       margin-right: 20px;
+   }
+   
+   .footer-box{
+       display: flex;
+       justify-content: left;
+       background-color: black;
+       width: 95%;
+       height: 150px;
+       margin: 1% 2.5%;
+       align-items: center;
+       padding-left: 13%;
+    }
+   
+    .footer-text {
+       font-size: 1.3em;
+       color: #EEE;
+       background-color: var(--GREEN_BOTTON);
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+       border-bottom-right-radius: 20px;
+       border-bottom-left-radius: 20px;
+       width: max-content;
+       padding: 10px 30px;
+       text-decoration: none;
+    }
+
+    .footer-text:hover{
+        scale: 1.1;
+        transition: 0.4s;
+    }
+
+
+
+    @media only screen and (max-width: 992px) { 
+    .header-padding{
+        padding: 0%;
+        align-items: center;
+    }
+    .Circule-Ofert{
+        scale: 0.8;
+        }
+    }
+    @media only screen and (max-width: 850px) {
+        .header-padding {
+            flex-direction: column;
+       
+        }
+    }
